@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,400;1,700&family=Roboto:wght@400;500;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto',sans-serif;
+    background-color:rgb(67, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap{
+    background-color: rgb(46, 139, 214);
+    border: 2px solid rgb(219, 189, 129);
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    color: rgb(8, 8, 39);
+    width:600px;
+}
+
+.wrap.active{
+   background-color: white;
+}
+.wrap-title{
+    margin: 0 35px 0 0;
+    font-size: 1rem;
+    text-shadow: 2px 1px 1px rgb(143, 112, 112);
+}
+
+.wrap-text{
+    display: none;
+    margin: 0 30px 0;
+}
+
+.wrap.active .wrap-text{
+    display:block;
+}
+.wrap-toggle{
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top:30px;
+    right:30px;
+    width:30px;
+    height:30px;
+}
+
+
+.wrap-toggle .fa-circle-chevron-down{
+    font-size: 1.5rem;
+}
+
+.wrap-toggle .fa-circle-xmark{
+    font-size: 1.5rem;
+}
+
+.wrap-toggle:focus{
+    display: none;
+}
+
+.wrap-toggle .fa-circle-xmark{
+    display:none;
+}
+
+.wrap.active .wrap-toggle .fa-circle-xmark{
+    display:block;
+}
+
+.wrap.active .wrap-toggle .fa-circle-chevron-down{
+    display:none;
+}
+
+
+
